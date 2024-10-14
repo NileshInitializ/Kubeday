@@ -27,7 +27,7 @@ func HomePageHandler(w http.ResponseWriter, r *http.Request) {
 	url := "https://www.initializ.ai/early-access"
 	size := 256 // Set the desired size of the QR code
 
-	// Generate the QR code
+	// Generate the QR code hh
 	qrCodeImage, err := generateQRCode(url, size)
 	if err != nil {
 		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
